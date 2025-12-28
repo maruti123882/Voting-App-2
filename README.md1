@@ -1,1 +1,41 @@
+Pass Below Commands One by One in git bush
 
+  git clone https://github.com/maruti123882/Voting-App-2.git
+  296  ls
+  297  cd Voting-App-2/
+  298  ls
+  299  ls
+  300  git clone https://github.com/maruti123882/Voting-App-2.git
+  301  ls
+  302  cd Voting-App-2/
+  303  ls
+  304  cd Deployment_Approach/
+  305  ls
+  306  kubectl apply -f voting-app-deploy.yaml
+  307  minikube start
+  308  minikube status
+  309  kubectl apply -f voting-app-deploy.yaml
+  310  kubectl apply -f voting-app-service.yaml
+  311  kubectl apply -f redis-deploy.yaml
+  312  kubectl apply -f redis-service.yaml
+  313  kubectl apply -f postgres-deploy.yaml
+  314  kubectl apply -f postgres-service.yaml
+  315  kubectl apply -f worker-deploy.yaml
+  316  kubectl apply -f worker-app-deploy.yaml
+  317  kubectl apply -f result-app-deploy.yaml
+  318  kubectl apply -f result-app-service.yaml
+  319  kubectl get pods
+  320  kubectl get deployments
+  321  kubectl get svc
+  322  kubectl get svc voting-service
+  323  kubectl get pods
+  
+  325  minikube service voting-service --url
+  $ minikube service voting-service --url
+   http://127.0.0.1:54785
+
+  
+  327  kubectl get svc result-service
+  328  minikube service result-service --url
+  $ minikube service result-service --url
+    http://127.0.0.1:58238
